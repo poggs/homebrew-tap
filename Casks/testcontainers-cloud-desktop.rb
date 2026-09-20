@@ -17,7 +17,7 @@ cask "testcontainers-cloud-desktop" do
 
   app "Testcontainers Cloud Desktop.app"
 
-  postflight do
+  postflight_steps do
     system_command "open",
                    args: ["#{appdir}/Testcontainers Cloud Desktop.app"]
   end
